@@ -1,3 +1,8 @@
-@author Zachary Wartell
+### D3 Beginner Project
 
-CSS and JS files (i.e. code) used for Dr. Wartell's Assignment Instructions when written in HTML5.
+Author: Zachary Wartell
+
+- A grade beginner project in D3
+- WWW: https://zwartell.gitlab.io/d3-beginner-project/
+
+
