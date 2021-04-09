@@ -301,8 +301,7 @@
         <h1 class="Section" id="Guide_to_Reading_these_Instructions" style="counter-reset: h2-Section 0; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Guide
           to Reading these Instructions</h1>
         <p>This tutorial uses the same conventions and features used in earlier
-          tutorials which are described at:</p>
-        <p><a href="https://zwartell.gitlab.io/Git_Tutorial_and_Coding_Standards/Git%20Tutorial.html#Guide_to_Reading_these_Instructions">https://zwartell.gitlab.io/Git_Tutorial_and_Coding_Standards/Git%20Tutorial.html#Guide_to_Reading_these_Instructions</a></p>
+          tutorials which are described at:<a href="https://zwartell.gitlab.io/Git_Tutorial_and_Coding_Standards/Git%20Tutorial.html#Guide_to_Reading_these_Instructions">https://zwartell.gitlab.io/Git_Tutorial_and_Coding_Standards/Git%20Tutorial.html#Guide_to_Reading_these_Instructions</a></p>
       </section>
       <section>
         <h1 class="toc">Coding Standards:</h1>
@@ -331,7 +330,13 @@
       <section>
         <h1 class="toc">D3 Beginner Project</h1>
         <p>For project you will extend the Observable notebook project <a href="https://observablehq.com/@d3/connected-scatterplot"
-            target="_blank">https://observablehq.com/@d3/connected-scatterplot.</a></p>
+            target="_blank">https://observablehq.com/@d3/connected-scatterplot.</a>
+        </p>
+        <p>.Note, if you are not developing in an IDE, and hence loading your
+          project into Chrome as a local file, then you will need to start an
+          instance of Chrome for your project using special command-line
+          parameters discussed in <a href="#toc--chrome-browser-blocked-by-cors-policy-error-"
+            target="_top">Appendix III: Section 4.1</a>.</p>
         <div>
           <ol class="Instruction">
             <li><span class="Exercise_Title">Git Repo</span><br>
@@ -549,7 +554,7 @@
     <div style="margin-left:250px">
       <section>
         <section>
-          <h1 class="toc">Appendix I: Rubric</h1>
+          <h1 class="toc nocount">Appendix I: Rubric</h1>
           <div style="border: solid 1px" hidden="">
             <p style="background-color: yellow; color: red; text-align: center;"><em>[3/12/2021
                 - 12:05am] Section&nbsp; Under Construction<br>
@@ -625,6 +630,71 @@
             acceptable or not, email the TA and/or Professor.</p>
           <p class="UnderConstruction"> </p>
         </section>
+        <section>
+          <h1 class="toc nocount">Appendix III: Troubleshooting </h1>
+          <section>
+            <h2 class="toc"> Chrome Browser: Error "blocked by CORS policy"</h2>
+            <ul>
+              <li><u>If using an IDE</u>:<br>
+                This error will (mostly likely) <u>not</u> occur if you <u>are</u>
+                using an IDE that supports HTML5 projects.<br>
+                (Such IDEs automatically start a local web server
+                to serve your project's html page and then start a browser with
+                the URL set to an http: UR, typically "localhost".). </li>
+              <li><u>If <strong>not</strong> using an IDE</u>:<br>
+                <ul>
+                  <li><u>Problem</u>: On the other hand, if you are using just
+                    regular text file editor, or even a programmer friendly
+                    editor which still lacks all the bells-and-whistles of an
+                    IDE, then you will be opening your project's html page as
+                    local file in Chrome.&nbsp; This means the URL is of type
+                    file: and not of type https.&nbsp; This short-cut will work
+                    for a static webpages that are simple enough' . However, at
+                    some point even a static webpage will run into problems with
+                    Chrome loading your project as local file.&nbsp; The error
+                    message you will get at the Console will indicate something
+                    like this :
+                    <p style="margin-left: 1em"> Access to script at '[...].js'
+                      from origin 'null' has been blocked by CORS policy: Cross
+                      origin requests are only supported for protocol schemes:
+                      http, data, chrome, chrome-extension, chrome-untrusted,
+                      https. </p>
+                  </li>
+                  <li><u>Solution</u>:
+                    <p> Start an instance Chrome with the following extra
+                      command-line parameters: <br>
+                      <br>
+                      <code> chrome --guest --allow-file-access-from-files
+                        --disable-web-security </code> <br>
+                      <br>
+                      For an explanation of what these parameters are doing see
+                      <a href="https://peter.sh/experiments/chromium-command-line-switches/"
+                        target="_blank">https://peter.sh/experiments/chromium-command-line-switches/</a></p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </section>
+    </div>
+    <div style="margin-left: 210px;">
+      <section>
+        <section>
+          <section>
+            <ul>
+              <li>
+                <p>While not, necessary for this class, if you are curious in
+                  learning more about what CORS is all about see <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS"
+                    target="_blank">MDN: "Cross-Origin Resource Sharing (CORS)"</a></p>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </section>
+    </div>
+    <div style="margin-left:250px">
+      <section>
         <section class="Staff_Only">
           <h1>Appendix III: &nbsp; [Teaching Staff Only] Notes</h1>
           <p></p>

@@ -429,27 +429,32 @@ span.MDN_h2
 Heading Numbering (Resource [R2])
 */
 body {
-    counter-reset: h1
+    counter-reset: h1;
 }
 
 h1 {
-    counter-reset: h2
+    counter-reset: h2;
+    font-size: larger;
 }
 
 h2 {
-    counter-reset: h3
+    counter-reset: h3;
+    font-size: large;
 }
 
 h3 {
-    counter-reset: h4
+    counter-reset: h4;
+    font-size: medium;
 }
 
 h4 {
-    counter-reset: h5
+    counter-reset: h5;
+    font-size: medium;
 }
 
 h5 {
-    counter-reset: h6
+    counter-reset: h6;
+    font-size: medium;
 }
 
 h1:before {
