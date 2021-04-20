@@ -126,11 +126,6 @@ span.Shell_Code_Comment
  *  Used to highligh revisions (updates) to instructions made after their initial publication
  *
  */
-span.Updated_Text
-{
-    color : red; 
-    background-color : yellow;
-}
 
 /*   Hierarchical List of Instructions
 */
