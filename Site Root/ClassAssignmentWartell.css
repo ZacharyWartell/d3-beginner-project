@@ -250,8 +250,33 @@ span.Shell_Code_Comment {
 
 
 /*
- * Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/:hover
- */
+Reference:
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/:hover
+    - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del
+*/
+del:hover ~ span.Updated_Text_Popup_Note:before
+{
+    content: "\2196  DELETE: ";
+    font-weight: bold;
+}
+
+ins:hover ~ span.Updated_Text_Popup_Note:before
+{
+    content: "\2196  INSERT: ";
+    font-weight: bold;
+}
+
+del {
+    text-decoration:line-through;
+    color: red;
+    background-color: white;
+}
+
+del:hover ~ span.Updated_Text_Popup_Note
+{
+    display: block;
+}
+
 span.Updated_Text_Popup_Note
 {
     position: absolute;
@@ -263,24 +288,6 @@ span.Updated_Text_Popup_Note
     padding: 5px;
 }
 
-span.Updated_Text_Popup_Note:before
-{
-    content: "\2196  EDIT: ";
-    font-weight: bold;
-}
-span.Updated_Text
-{
-    color: red;
-    background-color: white;
-}
-
-span.Updated_Text_Delete {
-    text-decoration:line-through;
-}
-span.Updated_Text:hover ~ span.Updated_Text_Popup_Note
-{
-    display: block;
-}
 
 /*
 *  Hierarchical List of Instructions
