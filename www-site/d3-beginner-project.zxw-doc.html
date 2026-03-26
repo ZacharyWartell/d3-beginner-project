@@ -1,18 +1,21 @@
 <!--
 \author Zachary Wartell\copyright Copyright 2015. Zachary Wartell.  All rights reserved.Developed in NetBeans and Seamonkey Composer.-->
-<!DOCTYPE html><html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="generator" content="HTML Tidy for HTML5 for Linux version 5.2.0">
-    <link href="toc.css" rel="stylesheet" type="text/css">
-    <link href="modules/zjw-generic-instructions/css/ClassAssignmentWartell.css" rel="stylesheet" type="text/css">
-    <title>ITCS 5121: T4-D3 Tutorial</title>
-    <!-- 
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="HTML Tidy for HTML5 for Linux version 5.2.0">
+  <link href="toc.css" rel="stylesheet" type="text/css">
+  <link href="modules/zjw-generic-instructions/css/ClassAssignmentWartell.css" rel="stylesheet" type="text/css">
+  <title>ITCS 5121: T4-D3 Tutorial</title>
+  <!-- 
     <script type="application/json" class="js-hypothesis-config">      {        "openSidebar": false      }    </script>
     <script src="https://hypothes.is/embed.js" async=""></script>
     <script src="libs/jquery-3.5.1.min.js"></script>
     <script src="libs/toc.min.js"></script>
     -->
+  <!-- 
     <script>
       /*  \author Zachary Wartell
        *  \brief toggle the "hidden" attribute of all elements of class "Class"
@@ -236,31 +239,31 @@
     </script>
     <link rel="stylesheet" href="generic_instructions.css">
     <link media="print" rel="stylesheet" href="generic_instructions.css">
-  </head>
-  <body onload="onload_Body()"> _<!-- IF_TOC -->
-    <div id="toc"> </div>
+    -->
+</head>
+
+<body onload="onload_Body()"> _<!-- IF_TOC -->
+  <div id="toc"> </div>
+  <div id="UserDocument">
     <div style="margin-left: 250px;">
       <h2 class="nocount Title">ITCS <span class="DataField" data-course-number=""></span>:
         <span data-project-number=""></span> - D3 Beginner Project<br>
       </h2>
       <h2 class="nocount Title">Spring 2021</h2>
       <h3 class="nocount Title">Professor: Zachary Wartell</h3>
-      <h3 class="nocount Title">Revision: $REVISION$ <sup> (<a href="https://gitlab.com/zwartell/zjw-generic-instructions/commits/master"
-
-            target="_blank">git logs</a>) </sup><br>
+      <h3 class="nocount Title">Revision: $REVISION$ <sup> (<a
+            href="https://gitlab.com/zwartell/zjw-generic-instructions/commits/master" target="_blank">git logs</a>)
+        </sup><br>
       </h3>
       <hr>
       <div style="text-align: center;"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img
-
-            alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a><br>
-        <span>"ITCS <span class="DataField" data-course-number=""></span> : <span
-
-            data-project-name-dir="">Generic Instructions</span>" </span>by <a
-
-          href="https://webpages.uncc.edu/zwartell/" rel="cc:attributionURL" target="_blank"
-
-          title="https://webpages.uncc.edu/zwartell/">Zachary Justin Wartell</a>
-        is licensed under a <a rel="license" href="http://creativecommons.org/lice%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20nses/by-nc-sa/4.0/">Creative
+            alt="Creative Commons License" style="border-width:0"
+            src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a><br>
+        <span>"ITCS <span class="DataField" data-course-number=""></span> : <span data-project-name-dir="">Generic
+            Instructions</span>" </span>by <a href="https://webpages.uncc.edu/zwartell/" rel="cc:attributionURL"
+          target="_blank" title="https://webpages.uncc.edu/zwartell/">Zachary Justin Wartell</a>
+        is licensed under a <a rel="license"
+          href="http://creativecommons.org/lice%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20nses/by-nc-sa/4.0/">Creative
           Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
       </div>
       <hr>
@@ -288,32 +291,36 @@
         <!--
         <button class="Text_Button" onclick="Div_Toggle('Server_Git_Viscenter');Div_Toggle('Server_Supports_SSH');"> git-viscenter </button>           <button class="Text_Button" onclick="Div_Toggle('Server_Bitbucket');Div_Toggle('Server_Supports_SSH');"> Bitbucket </button>                 <button class="Text_Button" onclick="Div_Toggle('Server_Cci_Git');"> cci-git </button>           -->
         <form name="System_Configuration">
-          <fieldset> <legend>Display Configuration:&nbsp;</legend> <label><b>Staff_Notes:</b>
+          <fieldset>
+            <legend>Display Configuration:&nbsp;</legend> <label><b>Staff_Notes:</b>
             </label> <input name="Staff_Notes" id="Staff_Notes" value="Staff_Notes"
-
-              onchange="Visibility_Toggle('Staff_Notes');Visibility_Toggle('Staff_Only');"
-
-              type="checkbox"> <label for="Staff_Notes">Visible</label> </fieldset>
+              onchange="Visibility_Toggle('Staff_Notes');Visibility_Toggle('Staff_Only');" type="checkbox"> <label
+              for="Staff_Notes">Visible</label>
+          </fieldset>
         </form>
-        <hr> </section>
+        <hr>
+      </section>
       <section>
         <h2 class="Section">Overview</h2>
         Total number of points for the project is 105 (see <a href="#RubricTable">Rubric
           Table</a> for&nbsp; a tabular summary).&nbsp; <br>
         <br>
         For this project you will port <a href="https://observablehq.com/@d3/connected-scatterplot"
-
           target="_blank">https://observablehq.com/@d3/connected-scatterplot.</a>
         to a stand-alone HTML5 page and add multiple new features and
         improvements to the original code. All files are submitted through git..
       </section>
       <section>
-        <h2 class="Section" id="Guide_to_Reading_these_Instructions" style="counter-reset: h2-Section 0; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Guide
+        <h2 class="Section" id="Guide_to_Reading_these_Instructions"
+          style="counter-reset: h2-Section 0; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+          Guide
           to Reading these Instructions</h2>
         <p>This tutorial uses the same conventions and features used in earlier
           tutorials which are described at:<br>
           <br>
-          <a href="https://zwartell.gitlab.io/Git_Tutorial_and_Coding_Standards/Git%20Tutorial.html#Guide_to_Reading_these_Instructions">https://zwartell.gitlab.io/Git_Tutorial_and_Coding_Standards/Git%20Tutorial.html#Guide_to_Reading_these_Instructions</a></p>
+          <a
+            href="https://zwartell.gitlab.io/Git_Tutorial_and_Coding_Standards/Git%20Tutorial.html#Guide_to_Reading_these_Instructions">https://zwartell.gitlab.io/Git_Tutorial_and_Coding_Standards/Git%20Tutorial.html#Guide_to_Reading_these_Instructions</a>
+        </p>
       </section>
       <section>
         <h2 class="Section">Coding Standards:</h2>
@@ -328,7 +335,7 @@
               <li>There should be at least one descriptive git commit message
                 associated with your achieving <u>each</u> of the requirements
                 below that ends with the statement <strong>git commit</strong>.&nbsp;&nbsp;
-                </li>
+              </li>
               <li>Good programming practice would suggest you should be making
                 additional commit messages, as you develop your code and debug
                 it, etc.Think of your git commit messages as professional
@@ -341,26 +348,22 @@
       </section>
       <section>
         <h2 class="Section">D3 Beginner Project</h2>
-        <p>For project you will extend the Observable notebook project <a href="https://observablehq.com/@d3/connected-scatterplot"
-
+        <p>For project you will extend the Observable notebook project <a
+            href="https://observablehq.com/@d3/connected-scatterplot"
             target="_blank">https://observablehq.com/@d3/connected-scatterplot.</a>
         </p>
         <p>.Note, if you are not developing in an IDE, and hence loading your
           project into Chrome as a local file, then you will need to start an
           instance of Chrome for your project using special command-line
-          parameters discussed in <a href="#toc--chrome-browser-error-blocked-by-cors-policy-"
-
-            target="_top">Appendix III: Section 4.1</a>.</p>
+          parameters discussed in <a href="#toc--chrome-browser-error-blocked-by-cors-policy-" target="_top">Appendix
+            III: Section 4.1</a>.</p>
         <div>
           <ol class="Instruction">
             <li><span class="Exercise_Title">Git Repo</span><br>
               <ol>
-                <li>Create a new remote repository on the Git server called <span
-
-                    style="File_Name">"<span class="DataField" data-course-number=""></span>-<span
-
-                      class="DataField" data-project-number=""></span>-<span class="DataField"
-
+                <li>Create a new remote repository on the Git server called <span style="File_Name">"<span
+                      class="DataField" data-course-number=""></span>-<span class="DataField"
+                      data-project-number=""></span>-<span class="DataField"
                       data-project-name-dir=""></span></span>".<br>
                   <ol>
                     <li>Remember to make your remote repository <b>"Private"</b></li>
@@ -368,9 +371,7 @@
                   </ol>
                 </li>
                 <li>Now clone your remote repo:<br>
-                  <table class="Code_Example" id="Code_Example5" style="width: 100%;"
-
-                    border="1">
+                  <table class="Code_Example" id="Code_Example5" style="width: 100%;" border="1">
                     <tbody>
                       <tr>
                         <td><button>▽</button></td>
@@ -379,7 +380,6 @@
                               ~/ITCS_<span class="DataField" data-course-number=""></span>/</code><br>
                             <code class="Shell_Code_Input">$git clone
                               https://cci-git.uncc.edu/<span class="User_Input">your_user_id</span>/</code><code
-
                               class="Shell_Code_Input"><span style="File_Name"><span
 
                                   data-project-git="">3120_P2_Planet_Mobile</span></span>.git
@@ -389,7 +389,8 @@
                                 data-project-number-long-dir="">Project_X</span>'...<br>
                               warning: You appear to have cloned an empty
                               repository.<br>
-                            </code> </div>
+                            </code>
+                          </div>
                         </td>
                       </tr>
                     </tbody>
@@ -399,12 +400,11 @@
               </ol>
             </li>
             <li>Briefly study the example and code at <a href="https://observablehq.com/@d3/connected-scatterplot"
-
                 target="_blank">https://observablehq.com/@d3/connected-scatterplot.<br>
               </a><br>
-              <span class="Exercise_Title"></span></li>
+              <span class="Exercise_Title"></span>
+            </li>
             <li><span class="Exercise_Title">File Organization</span>: <span class="Grade_Points"
-
                 data-points="5"></span> <span>Create initial files </span>as
               follows:<br>
               <ol>
@@ -424,18 +424,19 @@
                     import D3 as a JavaScript <span class="File_Name">import</span>
                     module.<br>
                     If you are not familiar with JS module's, read first section
-                    or so of MDN documentation: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import"
-
-                      target="_blank">MDN import</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export"
-
-                      target="_blank">MDN export</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#applying_the_module_to_your_html"
-
+                    or so of MDN documentation: <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import"
+                      target="_blank">MDN import</a>, <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export"
+                      target="_blank">MDN export</a> and <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#applying_the_module_to_your_html"
                       target="_blank">MDN "applying_the_module_to_your_html</a>".
-                    </del>
-                    <span class="Updated_Text_Popup_Note" stylex="display:block; position: static;">
-                          Requirement removed 4/20/2021. See <a href="https://uncc.instructure.com/courses/146720/discussion_topics/1070517"
-                          target="_blank">Canvas Announcement</a>
-                    </span>
+                  </del>
+                  <span class="Updated_Text_Popup_Note" stylex="display:block; position: static;">
+                    Requirement removed 4/20/2021. See <a
+                      href="https://uncc.instructure.com/courses/146720/discussion_topics/1070517"
+                      target="_blank">Canvas Announcement</a>
+                  </span>
                 </li>
                 <li>Add a function main() to <span class="File_Name">connected-scatterplot.js</span>&nbsp;
                   that prints "Hello World" to the console log.</li>
@@ -443,15 +444,12 @@
                   with message "-setup inital file organization" </li>
               </ol>
             </li>
-            <li><span class="Exercise_Title">Port</span>:&nbsp; <span class="Grade_Points"
-
-                data-points="15"></span> <span>Port Observable </span> <a href="https://observablehq.com/@d3/connected-scatterplot"
-
+            <li><span class="Exercise_Title">Port</span>:&nbsp; <span class="Grade_Points" data-points="15"></span>
+              <span>Port Observable </span> <a href="https://observablehq.com/@d3/connected-scatterplot"
                 target="_blank">https://observablehq.com/@d3/connected-scatterplot</a>'s
               D3 code to your JS and HTML files.<br>
               <ol>
                 <li>Download any referenced data files for <a href="https://observablehq.com/@d3/connected-scatterplot"
-
                     target="_blank">https://observablehq.com/@d3/connected-scatterplot.</a>into
                   your project directory.</li>
                 <li>Port the JavaScript source code from the Observable notebook
@@ -459,19 +457,21 @@
                   creating functions and classes as necessary.
                   <div class="Hint"><br>
                     <ul>
-                      <li> See the Canvas Announcement <a href="https://uncc.instructure.com/courses/146720/discussion_topics/1054444"
-
+                      <li> See the Canvas Announcement <a
+                          href="https://uncc.instructure.com/courses/146720/discussion_topics/1054444"
                           target="_blank">Notebook Cell 'auto-magic'</a></li>
-                      <li><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: large; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">The
+                      <li><span
+                          style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: large; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">The
                           Observable notebook code uses several functions that
                           are not part of D3 or JavaScript.&nbsp;&nbsp;&nbsp; To
                           port the notebook code make the following
                           substitutions:</span><span style="font-family: &quot;Times New Roman&quot;;">&nbsp;
-                          </span>instead of Observable FileAttachment read about
-                        and use<span>&nbsp;</span><a href="https://developer.mozilla.org/en-US/docs/Web/API/FileReader/onload"
-
+                        </span>instead of Observable FileAttachment read about
+                        and use<span>&nbsp;</span><a
+                          href="https://developer.mozilla.org/en-US/docs/Web/API/FileReader/onload"
                           target="_blank">FileReader.onload</a><span>&nbsp;</span>with
-                        an HTML<span>&nbsp;</span><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">&lt;input&gt;</a><span>&nbsp;</span>of
+                        an HTML<span>&nbsp;</span><a
+                          href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">&lt;input&gt;</a><span>&nbsp;</span>of
                         type="file".</li>
                     </ul>
                   </div>
@@ -481,39 +481,33 @@
                   with message "-ported connected scatter plot" </li>
               </ol>
             </li>
-            <li><span class="Exercise_Title">Feature</span>:&nbsp; <span class="Grade_Points"
-
-                data-points="15"></span> <span>Pan and Zoom: </span>Add a pan
+            <li><span class="Exercise_Title">Feature</span>:&nbsp; <span class="Grade_Points" data-points="15"></span>
+              <span>Pan and Zoom: </span>Add a pan
               and zooming a user interface.&nbsp; The input control method is up
               to you.&nbsp; That is you can use a set of keyboard keys, or
               implement a mouse interface or a multi-touch user interface&nbsp;
-              (see <a href="https://developer.mozilla.org/en-US/docs/Web/API/Touch_events"
-
-                target="_blank">MDN Touch_events</a>).
+              (see <a href="https://developer.mozilla.org/en-US/docs/Web/API/Touch_events" target="_blank">MDN
+                Touch_events</a>).
               <div class="Hint">
                 <ul>
                   <li> Panning and zooming is done in SVG by adjusting the
                     viewbox (see <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox">
                       MDN viewBox</a></li>
                   <li>For touch the option see <a href="https://developer.mozilla.org/en-US/docs/Web/API/Touch_events"
-
                       target="_blank">MDN Touch_events</a>.</li>
                 </ul>
               </div>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox"
-
-                target="_blank">MDN viewbox)</a>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox" target="_blank">MDN
+                viewbox)</a>
               <div style="align-items: center; text-align: center;">
-                <figure> <img src="images/app%20sketch.png"
-
-                    alt="app" title="app" width="750px">&nbsp;<figcaption>Figure
+                <figure> <img src="images/app%20sketch.png" alt="app" title="app" width="750px">&nbsp;<figcaption>Figure
                     1: Sketch of Final Application (Note Feature 9 is not
-                    illlustrated)</figcaption> </figure>
+                    illlustrated)</figcaption>
+                </figure>
               </div>
             </li>
-            <li><span class="Exercise_Title">Feature</span>:&nbsp; <span class="Grade_Points"
-
-                data-points="10"></span> <span>Data Point Selection:</span> Add
+            <li><span class="Exercise_Title">Feature</span>:&nbsp; <span class="Grade_Points" data-points="10"></span>
+              <span>Data Point Selection:</span> Add
               the ability to hover the the mouse pointer over any data point and
               display a pop-up window with labeled numerical values of all three
               of the data points 3 dimensional attributes (year, miles per
@@ -521,14 +515,12 @@
               <span class="Git_Commit">Git add and commit</span> with message
               "-[feature] <span>Data Point Selection</span>" <br>
               <div class="Hint">See <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseover_event"
-
-                  target="_blank">MDN Mouseover Event </a><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/user_interface/Popups"
-
+                  target="_blank">MDN Mouseover Event </a><a
+                  href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/user_interface/Popups"
                   target="_blank">MDN Popups</a></div>
             </li>
-            <li><span class="Exercise_Title">Feature</span>:&nbsp; <span class="Grade_Points"
-
-                data-points="10"></span> <span>Time Range Selection:</span> Add
+            <li><span class="Exercise_Title">Feature</span>:&nbsp; <span class="Grade_Points" data-points="10"></span>
+              <span>Time Range Selection:</span> Add
               a GUI element slider to select an time internal (i.e. a start year
               and end year). The extreme possible values, min and max, should be
               determined by the data loaded.&nbsp;&nbsp; You must choose one of
@@ -542,29 +534,29 @@
                   logical that prevents the user from sliding the start year
                   higher than the end year or vice-versa.
                   <div class="Hint">See <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range"
-
                       target="_blank">MDN Input Range <br>
                     </a> </div>
                 </li>
                 <li>Option II <span class="Extra_Credit_Points" data-points="10"></span>
                   Use SVG drawing and object selection to implement your <strong>own
-                    </strong>interval slider. Yes, add-on libriares provide
+                  </strong>interval slider. Yes, add-on libriares provide
                   these, but the extra credit task here is to learn some more
                   SVG and implement you own concept. A example library that
                   demonstrates what you are to create is the jQuery Range slider
-                  shown at <a href="https://jqueryui.com/slider/#range" target="_blank">https://jqueryui.com/slider/#range</a></li>
+                  shown at <a href="https://jqueryui.com/slider/#range"
+                    target="_blank">https://jqueryui.com/slider/#range</a></li>
               </ol>
-              <strong> </strong> </li>
-            <li><span class="Exercise_Title">Feature</span>:&nbsp; <span class="Grade_Points"
-
-                data-points="10"></span> <span>Time Range Highlighting:</span>&nbsp;
+              <strong> </strong>
+            </li>
+            <li><span class="Exercise_Title">Feature</span>:&nbsp; <span class="Grade_Points" data-points="10"></span>
+              <span>Time Range Highlighting:</span>&nbsp;
               Modify the drawing of the plotted curve to highlight the section
               of the curve corresponding to the time range selected in the UI
               above.<br>
               <span class="Git_Commit">Git add and commit</span> with message
-              "-[feature] <span>Time Range Highlighting</span><span></span>" </li>
+              "-[feature] <span>Time Range Highlighting</span><span></span>"
+            </li>
             <li><span class="Exercise_Title">Feature</span>:&nbsp; <span class="Grade_Points"
-
                 data-points="10"></span><span>Color Coding Bivariate Delta
                 Values:</span> In addition to the year, each plot point has two
               data values. As we move from one year to the next these two values
@@ -574,16 +566,16 @@
               recommended methods for bivariate data color coding and color code
               the plot points using that color coding<br>
               <span class="Git_Commit">Git add and commit</span> with message
-              "-[feature] Color Coding Bivariate Delta Values<span></span>" </li>
+              "-[feature] Color Coding Bivariate Delta Values<span></span>"
+            </li>
             <li><span class="Exercise_Title">Feature</span>:&nbsp; <span class="Grade_Points"
-
                 data-points="5"></span><span> Color Coding Legend:</span>&nbsp;
               Add a color coding legend to the page.&nbsp;&nbsp; See Figure 4.36
               in the textbook for an example.<br>
               <span class="Git_Commit">Git add and commit</span> with message
-              "-[feature] Color Coding Bivariate Delta Values<span></span>" </li>
+              "-[feature] Color Coding Bivariate Delta Values<span></span>"
+            </li>
             <li><span class="Exercise_Title">Feature</span>:&nbsp; <span class="Grade_Points"
-
                 data-points="15"></span><span> Generalizing for Other Data Sets:</span>&nbsp;
               <br>
               <ol>
@@ -626,7 +618,8 @@
             </strong><u>Exercise</u><strong>:'s.<br>
               <br>
             </strong>ZJW: 3/12/2021:&nbsp; The rubric is nearly complete<strong>.<br>
-            </strong> </div>
+            </strong>
+          </div>
           <table id="RubricTable" style="width: 100%;" border="1">
             <tbody>
               <tr>
@@ -729,8 +722,8 @@
                       <br>
                       For an explanation of what these parameters are doing see
                       <a href="https://peter.sh/experiments/chromium-command-line-switches/"
-
-                        target="_blank">https://peter.sh/experiments/chromium-command-line-switches/</a></p>
+                        target="_blank">https://peter.sh/experiments/chromium-command-line-switches/</a>
+                    </p>
                   </li>
                 </ul>
               </li>
@@ -746,9 +739,9 @@
             <ul>
               <li>
                 <p>While not, necessary for this class, if you are curious in
-                  learning more about what CORS is all about see <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS"
-
-                    target="_blank">MDN: "Cross-Origin Resource Sharing (CORS)"</a></p>
+                  learning more about what CORS is all about see <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" target="_blank">MDN: "Cross-Origin
+                    Resource Sharing (CORS)"</a></p>
               </li>
             </ul>
           </section>
@@ -780,15 +773,14 @@
                 </ul>
               </ul>
               <li>Taste of SVG - <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Getting_Started"
-
                   target="_blank">https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Getting_Started</a></li>
               <ul>
                 <li>grading:&nbsp; console log ?</li>
               </ul>
-              <li>Understanding D3 "join" in mild depth - <a href="https://bost.ocks.org/mike/join/">https://bost.ocks.org/mike/join/</a>
+              <li>Understanding D3 "join" in mild depth - <a
+                  href="https://bost.ocks.org/mike/join/">https://bost.ocks.org/mike/join/</a>
               </li>
               <li>Understanding D3 "join" in super-depth - <a href="https://bost.ocks.org/mike/join/"
-
                   target="_blank">https://bost.ocks.org/mike/selection/ <br>
                 </a></li>
               <ul>
@@ -800,14 +792,13 @@
             <li>SVG</li>
             <ul>
               <li><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Getting_Started"
-
                   target="_blank">https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Getting_Started</a></li>
             </ul>
             <li>D3</li>
             <ul>
               <li><a href="https://d3js.org/" target="_blank">https://d3js.org/</a></li>
               <li><a href="https://bost.ocks.org/mike/join/" target="_blank">https://bost.ocks.org/mike/join/
-                  </a></li>
+                </a></li>
             </ul>
           </ul>
         </section>
@@ -815,14 +806,11 @@
           <h2>Appendix IV: [Teaching Staff Only]&nbsp; Code Retrieval and Repo
             Setup</h2>
           <ol class="Instruction">
-            <li>Start your shell.&nbsp;&nbsp; cd to your ITCS_<span class="DataField"
-
-                data-course-number=""></span> directory, where you did yours
+            <li>Start your shell.&nbsp;&nbsp; cd to your ITCS_<span class="DataField" data-course-number=""></span>
+              directory, where you did yours
               previous projects. Verify you have a directory structure as shown
               below:<br>
-              <table class="Code_Example" id="Code_Example1" style="width: 100%;"
-
-                border="1">
+              <table class="Code_Example" id="Code_Example1" style="width: 100%;" border="1">
                 <tbody>
                   <tr>
                     <td><button>▽</button></td>
@@ -856,13 +844,15 @@
                           ./WebGL_Programming_Guide/ch02<br>
                           ./WebGL_Programming_Guide/ch03<br>
                           <span class="Shell_Code_Comment">[...etc...]</span><br>
-                        </code> </div>
+                        </code>
+                      </div>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </li>
-            <li>Create a new remote repository on the Git server called <span style="File_Name">"3120_P2_Planet_Mobile"</span>.<br>
+            <li>Create a new remote repository on the Git server called <span
+                style="File_Name">"3120_P2_Planet_Mobile"</span>.<br>
               <ol>
                 <li>Remember to make your remote repository <b>"Private"</b> .</li>
                 <li>Remember to give the TA and Professor "Reporter" Access.</li>
@@ -870,9 +860,7 @@
               <br>
             </li>
             <li>Now clone your remote repo:<br>
-              <table class="Code_Example" id="Code_Example5" style="width: 100%;"
-
-                border="1">
+              <table class="Code_Example" id="Code_Example5" style="width: 100%;" border="1">
                 <tbody>
                   <tr>
                     <td><button>▽</button></td>
@@ -881,14 +869,14 @@
                           ~/ITCS_<span class="DataField" data-course-number=""></span>/</code><br>
                         <code class="Shell_Code_Input">$git clone
                           https://cci-git.uncc.edu/<span class="User_Input">your_user_id</span>/</code><code
-
                           class="Shell_Code_Input"><span style="File_Name">3120_P2_Planet_Mobile</span>.git
                           <span data-project-number-long-dir="Project_2"></span></code>2<br>
                         <code class="Shell_Code_Output">Cloning into
                           'Project_4'...<br>
                           warning: You appear to have cloned an empty
                           repository.<br>
-                        </code> </div>
+                        </code>
+                      </div>
                     </td>
                   </tr>
                 </tbody>
@@ -898,9 +886,7 @@
             <li>Next, retrieve the skeleton code:<br>
               (The mechanics below are common git technique called 'fork'ing).<br>
               &nbsp;
-              <table class="Code_Example" id="Code_Example3" style="width: 100%;"
-
-                border="1">
+              <table class="Code_Example" id="Code_Example3" style="width: 100%;" border="1">
                 <tbody>
                   <tr>
                     <td><button>▽</button></td>
@@ -953,9 +939,7 @@
               <br>
             </li>
             <li>Push the skeleton code to <u><b>your</b></u> repo.<br>
-              <table class="Code_Example" id="Code_Example7" style="width: 100%;"
-
-                border="1">
+              <table class="Code_Example" id="Code_Example7" style="width: 100%;" border="1">
                 <tbody>
                   <tr>
                     <td><button>▽</button></td>
@@ -983,7 +967,8 @@
                         </code> <span class="Shell_Code_Comment">[... this
                           pushes the local repo to your remote repo and ensures
                           further git operations will default to using your
-                          remote ...]</span> </div>
+                          remote ...]</span>
+                      </div>
                     </td>
                   </tr>
                 </tbody>
@@ -991,9 +976,7 @@
               <br>
             </li>
             <li>Verify your directory structure:<br>
-              <table class="Code_Example" id="Code_Example8" style="width: 100%;"
-
-                border="1">
+              <table class="Code_Example" id="Code_Example8" style="width: 100%;" border="1">
                 <tbody>
                   <tr>
                     <td><button>▽</button></td>
@@ -1056,50 +1039,51 @@
             level aspects of HTML5 and DOM:</p>
           <ul>
             <li> <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Introduction">
-https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Introduction</a> - High
+                https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Introduction</a> - High
               level of description of HTML5 is sufficient along with the WebGL
               book's tutorial. </li>
-            <li> <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">
-https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction</a>
+            <li> <a target="_blank"
+                href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">
+                https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction</a>
               - High level description of the Document Object Model (DOM) </li>
           </ul>
         </section>
       </section>
     </div>
-    <template>
-      <div>
-        <ol class="Instruction">
-          <li>[<a href="https://observablehq.com/@d3/lets-make-a-bar-chart/4" target="_blank">Let’s
-              Make a Bar Chart - Part IV</a><span style="color: #0000ee;"> ]</span>
-            <ol>
-              <li><span class="Exercise_Title">Exercise</span>: Part IV -
-                Reading and Playing<span> </span> <br>
-                <br>
-                Part IV improves the visual quality and uses a larger dataset..<br>
-                Read through Part IV.&nbsp;&nbsp; Experiment a bit with the
-                notebook code to aid your understanding. <br>
-                There is nothing to submit for this exercise. <br>
-                <br>
-              </li>
-              <li><span class="Exercise_Title">Exercise</span>: <span class="Grade_Points"
+  </div>
+  <template>
+    <div>
+      <ol class="Instruction">
+        <li>[<a href="https://observablehq.com/@d3/lets-make-a-bar-chart/4" target="_blank">Let’s
+            Make a Bar Chart - Part IV</a><span style="color: #0000ee;"> ]</span>
+          <ol>
+            <li><span class="Exercise_Title">Exercise</span>: Part IV -
+              Reading and Playing<span> </span> <br>
+              <br>
+              Part IV improves the visual quality and uses a larger dataset..<br>
+              Read through Part IV.&nbsp;&nbsp; Experiment a bit with the
+              notebook code to aid your understanding. <br>
+              There is nothing to submit for this exercise. <br>
+              <br>
+            </li>
+            <li><span class="Exercise_Title">Exercise</span>: <span class="Grade_Points" data-points="10"></span>
+              <span>Port "Part IV" to <span class="File_Name">BarChart.html</span></span><br>
+              <ol>
+                <li>Integrate the final updated notebook code from Part IV and
+                  port it into your <span><span class="File_Name">BarChart.html<br>
+                    </span></span> Download and add the mentioned data file, <span class="File_Name">alphabet.csv</span>
+                  to your project
+                  directory.<br>
+                </li>
+                <li><span class="Git_Commit">Git add and commit</span> the
+                  file(s) with message "-completed Part IV" </li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+  </template>
+</body>
 
-                  data-points="10"></span> <span>Port "Part IV" to <span class="File_Name">BarChart.html</span></span><br>
-                <ol>
-                  <li>Integrate the final updated notebook code from Part IV and
-                    port it into your <span><span class="File_Name">BarChart.html<br>
-                      </span></span> Download and add the mentioned data file, <span
-
-                      class="File_Name">alphabet.csv</span> to your project
-                    directory.<br>
-                  </li>
-                  <li><span class="Git_Commit">Git add and commit</span> the
-                    file(s) with message "-completed Part IV" </li>
-                </ol>
-              </li>
-            </ol>
-          </li>
-        </ol>
-      </div>
-    </template>
-  </body>
 </html>
