@@ -1,0 +1,5 @@
+#export PATH=$PATH:$(pwd)/scripts/zjwp
+ROOT="$1"
+#echo "$(basename $0) : ROOT $ROOT"
+echo "zjwp.sh : ROOT $ROOT"
+source "$ROOT/scripts/zjwp/zjwp-set-path"
