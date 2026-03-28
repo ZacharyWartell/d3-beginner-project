@@ -7,4 +7,3 @@ Author: Zachary Wartell
     - https://github.com/ZacharyWartell/zxw-mvc (Architect/Programmer: Zachary Wartell)
 - Git: https://github.com/ZacharyWartell/d3-beginner-project
 - Deployed WWW: https://webpages.charlotte.edu/zwartell/Teaching/d3-beginner-project
-
