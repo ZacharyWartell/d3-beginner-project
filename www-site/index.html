@@ -50,14 +50,18 @@
     //const DEV_BUILD = true;
     const DEV_BUILD=false;
 
-    class App extends ZxW_GUI.DefaultApplication {
-      constructor() { super(); }
+    class App extends ZxW_GUI.DefaultApplication 
+    {
+      constructor() 
+        { 
+            super(); 
+            this.myApp = document.title;
+        }
       postUserDocumentLoadCallback()
       {
           /**
            * \status experimental
            */
-          CAW.main(250, !DEV_BUILD, 2);    
       }
     }
 
@@ -65,7 +69,7 @@
     await ZxW_GUI.DefaultApplication.fetchUserDocument(app, "d3-beginner-project.zxw-doc.html");
 
     window.BreadCrumb = Rubric.BreadCrumb;
-    CAW.main(200, !DEV_BUILD, 2);
+    CAW.main(250, !DEV_BUILD, 2);
 
 
     window.Visibility_Toggle = CAW.Visibility_Toggle;
